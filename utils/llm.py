@@ -13,7 +13,7 @@ def get_llm(temperature: float = 0.0) -> ChatGroq:
         raise ValueError("CRITICAL: GROQ_API_KEY is missing from your environment setup.")
         
     return ChatGroq(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.1-8b-instant",
         temperature=temperature,
         api_key=api_key
     )
